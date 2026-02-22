@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Login Section -->
+    <main id="logform">
+        <div class="container py-5">
+            <form>
+                <h1>Login Form:</h1>
+
+                <div class="form-group my-3">
+                    <label>User Email</label>
+                    <input type="email" class="form-control" id="useremail">
+                </div>
+
+                <div class="form-group my-3">
+                    <label>User Password</label>
+                    <input type="password" class="form-control" id="userpass">
+                </div>
+
+                <button id="logbtn" class="btn btn-primary">Login</button>
+            </form>
+
+            <div id="errMess" class="alert alert-danger p-2 mt-3 d-none">
+                Invalid Email Or Password
+            </div>
+
+            <div id="succMess" class="alert alert-success p-2 mt-3 d-none">
+                Login Successfully
+            </div>
+        </div>
+    </main>
+
+    <!-- Test Section -->
+    <section id="test" class="d-none">
+        <div class="container py-5">
+
+            <div id="questionArea">
+                <label>Enter Number Of Questions:</label>
+                <input type="number" class="form-control my-3" id="questionsNum">
+                <button class="btn btn-primary mb-3" id="strTestBtn">
+                    Start Test
+                </button>
+            </div>
+
+            <div id="testScreen"></div>
+
+            <button class="btn btn-success mt-3 d-none" id="submitTest">
+                Submit
+            </button>
+
+            <div id="scoreBox" class="alert alert-info mt-3 d-none"></div>
+
+            <button id="logoutBtn" class="btn btn-danger mt-3 d-none" >
+                Logout
+            </button>
+
+        </div>
+    </section>
+
+
+
+
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>
